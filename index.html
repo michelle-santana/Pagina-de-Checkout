@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand text-light"><img src="../P-gina-de-Checkout/img/coruja-logo-png-5.png" width="40px">
+                Loja da Mih</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#"> <span class="sr-only">(Página atual)</span></a>
+                    <a class="nav-item nav-link" href="#"></a>
+                    <a class="nav-item nav-link" href="#"></a>
+                    <a class="nav-item nav-link disabled" href="#"></a>
+                </div>
+            </div>
+
+            <a class="btn" href="#">
+                <button type="button" class="btn btn-info">Continue Comprando</button>
+
+            </a>
+        </nav>
+    </header>
+    <main class="container">
+        <form id="formulario Checkout" class="row mt-4">
+
+            <div class="col-md-4">
+                <header class="p-3 mb-2 bg-info text-light">
+                    Dados pessoais
+                </header>
+                <div class="p-2">
+                    <div class="form-group">
+                        <label for="nomeUsuário">Nome completo</label>
+                        <input class="form-control" type="text" name="nomeUsuario" placeholder="Digite nome completo">
+                    </div>
+                    <div class="form-group">
+                        <label for="cpfusuario">CPF</label>
+                        <input class="form-control" type="text" name="cpfusuario" placeholder="Digite seu CPF">
+                    </div>
+                    <div class="form-group">
+                        <label for="telusuario">Seu Telefone</label>
+                        <input class="form-control" type="text" name="telusuario" placeholder="(00) 0 0000-0000">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Endereço de email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="nome@exemplo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Senha</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="**********">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+                <header class="p-3 mb-2 bg-info text-light">
+                    Entrega
+                </header>
+                <div class="form-group">
+                    <label for="validationTooltip05">CEP</label>
+                    <input type="text" class="form-control" id="validationTooltip05" placeholder="00000-000" required>
+                </div>
+                <div class="form-group">
+                    <label for="validationTooltip03">Endereço</label>
+                    <input type="text" class="form-control" id="validationTooltip03" placeholder="Digite seu endereço"
+                        required>
+                </div>
+
+                <div class="form-row p-2">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Numero">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Complemento">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="validationTooltip03">Bairro</label>
+                    <input type="text" class="form-control" id="validationTooltip03" placeholder="Bairro" required>
+                </div>
+
+                <div class="form-row p-2">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Cidade">
+                    </div>
+                    <select class="">
+                        <label for="estadousuario"></label>
+
+                        <option value="cidadeusuario" disabled selected name="estadoUsuario">Estado</option>
+                        <option value="SP">São paulo</option>
+                        <option value="BA">Bahia</option>
+                        <option value="ES">Espirito Santo</option>
+                        <option value="RJ">Rio de janeiro</option>
+
+                    </select>
+                </div>
+                <div class="form-row p-2">
+                    <label for="formasenvio"></label>
+                    <select class="form-control">
+                        <option value="formas envio" disabled selected name="formas envio">formas de envio:</option>
+                        <option value="Normal">Frete Normal R$19,99</option>
+                        <option value="Rapido">Frete Rápido R$ 39,99</option>
+
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <header class="p-3 mb-2 bg-info text-light">
+                    Pagamento
+
+                </header>
+               
+                 <div class="form-group">
+                    <label for="exampleFormControlSelect2">Lista de Compras:</label>
+                    <select multiple class="form-control" id="exampleFormControlSelect2">
+                      <option>Shampoo Dove - R$18,00</option>
+                      <option>Sabonete J&J  - R$9,99</option>
+                      <option>Batom Ruby Rose  - R$12,90</option>
+                      <option>Dorflex 4 comprimidos  - R$4,99</option>
+                      <option>Creme hidratante -  R$10,00</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <button type="button" class="btn btn-info">Total da Compra: R$00,00</button>
+                  </div>
+
+                <div class="form-group">
+                    <label for="cartaousuario">Número do Cartão</label>
+                    <input class="form-control" type="text" name="cartaousuarioo" placeholder="Digite N° cartão">
+                </div>
+                <div class="form-row p-2">
+                    <div class="col">
+                        <label for="dataValidade">Data Validade</label>
+                        <input type="text" class="form-control" placeholder="00/00">
+                    </div>
+                    <div class="form-group" id="col">
+                        <label for="CodSegurança">CVV</label>
+                        <input type="text" class="form-control" placeholder="CVV">
+                    </div>  
+                    
+                    <div class="form-row p-2">
+                        <label for="nomeTitular">Nome Titular</label>
+                        <input class="form-control" type="text" name="nomeUsuario" placeholder="Nome Titular">
+                    </div>
+
+                    <div class="form-row p-2">
+                        <label for="cpfTitular">CPF Titular</label>
+                        <input class="form-control" type="text" name="cpfTitular" placeholder="CPF do Titular">
+                    </div>
+                    
+                    <a class="btn" href="#">
+                        <button type="button" class="btn btn-success" >Finalizar Compra</button>
+        
+                    </a> 
+
+            </div>
+            </div>
+        </form>
+    </main>
+
+</body>
+
+</html>
