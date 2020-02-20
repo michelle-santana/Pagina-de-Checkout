@@ -32,6 +32,7 @@
             <a class="btn" href="#">
                 <button type="button" class="btn btn-info">Continue Comprando</button>
 
+
             </a>
         </nav>
     </header>
@@ -48,21 +49,29 @@
                         <input class="form-control" type="text" name="nomeUsuario" placeholder="Digite nome completo">
                     </div>
                     <div class="form-group">
-                        <label for="cpfusuario">CPF</label>
-                        <input class="form-control" type="text" name="cpfusuario" placeholder="Digite seu CPF">
+                        <label for="cpfUsuario">CPF</label>
+                        <input id="CPFuser" class="form-control" type="text" name="cpfUsuario"
+                            placeholder="Digite seu CPF">
                     </div>
                     <div class="form-group">
                         <label for="telusuario">Seu Telefone</label>
-                        <input class="form-control" type="text" name="telusuario" placeholder="(00) 0 0000-0000">
+                        <input id="telUser" class="form-control" type="text" name="telusuario"
+                            placeholder="(00) 0 0000-0000">
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Endereço de email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                        <input id="emailUser" type="email" class="form-control" id="exampleFormControlInput1"
                             placeholder="nome@exemplo.com">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Senha</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="**********">
+                        <label for="InputPassword1">Senha</label>
+                        <input id="password" type="password" class="form-control" id="exampleInputPassword1"
+                            placeholder="**********">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Confirme a Senha</label>
+                        <input id="confirmeSenha" type="password" class="form-control" id="exampleInputPassword1"
+                            placeholder="**********">
                     </div>
 
                 </div>
@@ -74,13 +83,14 @@
                     Entrega
                 </header>
                 <div class="form-group">
-                    <label for="validationTooltip05">CEP</label>
-                    <input type="text" class="form-control" id="validationTooltip05" placeholder="00000-000" required>
+                    <label for="validacaoCEP">CEP</label>
+                    <input id="validacaoCEP" type="text" class="form-control" id="validacaoCEP" placeholder="00000-000"
+                        required>
                 </div>
                 <div class="form-group">
                     <label for="validationTooltip03">Endereço</label>
-                    <input type="text" class="form-control" id="validationTooltip03" placeholder="Digite seu endereço"
-                        required>
+                    <input id="endereco" type="text" class="form-control" id="validationTooltip03"
+                        placeholder="Digite seu endereço" required>
                 </div>
 
                 <div class="form-row p-2">
@@ -93,12 +103,12 @@
                 </div>
                 <div class="form-group">
                     <label for="validationTooltip03">Bairro</label>
-                    <input type="text" class="form-control" id="validationTooltip03" placeholder="Bairro" required>
+                    <input type="text" class="form-control" id="bairro" placeholder="Bairro" required>
                 </div>
 
                 <div class="form-row p-2">
                     <div class="col">
-                        <input type="text" class="form-control" placeholder="Cidade">
+                        <input id="nomeCidade" type="text" class="form-control" placeholder="Cidade">
                     </div>
                     <select class="">
                         <label for="estadousuario"></label>
@@ -127,24 +137,25 @@
                     Pagamento
 
                 </header>
-               
-                 <div class="form-group">
+
+                <div class="form-group">
                     <label for="exampleFormControlSelect2">Lista de Compras:</label>
                     <select multiple class="form-control" id="exampleFormControlSelect2">
-                      <option>Shampoo Dove - R$18,00</option>
-                      <option>Sabonete J&J  - R$9,99</option>
-                      <option>Batom Ruby Rose  - R$12,90</option>
-                      <option>Dorflex 4 comprimidos  - R$4,99</option>
-                      <option>Creme hidratante -  R$10,00</option>
+                        <option>Shampoo Dove - R$18,00</option>
+                        <option>Sabonete J&J - R$9,99</option>
+                        <option>Batom Ruby Rose - R$12,90</option>
+                        <option>Dorflex 4 comprimidos - R$4,99</option>
+                        <option>Creme hidratante - R$10,00</option>
                     </select>
-                  </div>
-                  <div class="form-group">
+                </div>
+                <div class="form-group">
                     <button type="button" class="btn btn-info">Total da Compra: R$00,00</button>
-                  </div>
+                </div>
 
                 <div class="form-group">
                     <label for="cartaousuario">Número do Cartão</label>
-                    <input class="form-control" type="text" name="cartaousuarioo" placeholder="Digite N° cartão">
+                    <input id="cartaoVali" class="form-control" type="text" name="cartaousuarioo"
+                        placeholder="Digite N° cartão">
                 </div>
                 <div class="form-row p-2">
                     <div class="col">
@@ -154,28 +165,61 @@
                     <div class="form-group" id="col">
                         <label for="CodSegurança">CVV</label>
                         <input type="text" class="form-control" placeholder="CVV">
-                    </div>  
-                    
+                    </div>
+
                     <div class="form-row p-2">
                         <label for="nomeTitular">Nome Titular</label>
                         <input class="form-control" type="text" name="nomeUsuario" placeholder="Nome Titular">
                     </div>
 
                     <div class="form-row p-2">
-                        <label for="cpfTitular">CPF Titular</label>
-                        <input class="form-control" type="text" name="cpfTitular" placeholder="CPF do Titular">
+                        <label for="cpfCliente">CPF Titular</label>
+                        <input id="cpfCliente" class="form-control" type="text" name="cpfCliente"
+                            placeholder="CPF Titular">
                     </div>
-                    
-                    <a class="btn" href="#">
-                        <button type="button" class="btn btn-success" >Finalizar Compra</button>
-        
-                    </a> 
 
+                    <a class="btn" href="#">
+                        <button type="button" class="btn btn-success" data-toggle="modal"
+                            data-target="#compraFinalizada"> Finalizar Compra</button>
+
+
+                    </a>
+
+                </div>
             </div>
-            </div>
+
         </form>
     </main>
+    <div id="compraFinalizada" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Compra realizada</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Compra realizada com sucesso!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-info">Receber NF via e-mail</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
