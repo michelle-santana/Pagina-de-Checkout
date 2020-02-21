@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+}
+
+* {
+
+ font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/*---inicio header---*/
+header{
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.search input{
+    height: 25px;
+    padding-left: 5px;
+
+}
+.search button{
+    background-color:#006172;
+    color: #fff;
+    border: none;
+    height: 31px;
+    cursor: pointer;
+}
+.search button:hover{
+    background-color: #09859a;
+    /* opacity: 0.7; */
+}
+
+.login a{
+    color: #8d8178d0;
+    text-decoration: none;
+    font-weight: bold;
+}
+.login a::before{
+    content: "";
+    background-image: url(../img/conecte-se.png);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    margin-left: -24px;
+    margin-top: -4;
+    background-size: 24px;
+
+}
+
+/*----fim header----*/
